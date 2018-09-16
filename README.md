@@ -1,34 +1,39 @@
-# Feedreader Testing
+# # Feedreader Testing
+
+## Table of Contents
+* [Description](#description)
+* [License](#license)
+* [Resources and dependencies](#resources-and-dependecies)
+* [Necessary libraries](#necessary-libraries)
+* [Necessary tools](#necessary-tools)
+* [Installation](#installation)
+* [To run the project locally](#to-run-the-project-locally)
 
 ## Description
 This repo is about building Unit Tests with Jasmine Testing Framework
 around an app that reads RSS feeds thanks to the Google API.
+This is a project from the course __Front-End Developer Nanodegree__ @ Udacity.com
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for
 details.
 
-## Resources and Dependencies
-In this repo, the following local libs have been loaded with NPM (Node Package Manager):
+## Resources and dependencies
 
-├── eslint@5.6.0
+### Necessary libraries:
+* node@8.11.3
+* jquery@3.3.1
 
-├── eslint-config-google@0.10.0
-
-├── jasmine@3.2.0
-
-├── jasmine-jquery@2.1.1
-
-└── jquery@3.3.1
-
-__N.B.__ The following libs are not installed locally:
-
-├── Node.js
-
-├── Npm
-
-- If you want to use your global libraries, just delete the folder __node_modules__
+### Necessary tools
+* npm@6.4.1
+* jasmine@3.2.0
 
 ## Installation
-Just download or clone the project, then open index.html with your favorite
-browser to load the web page with Jasmine Testing Framework Loaded
+
+### To run the project locally
+1. Clone or Download the project
+	`https://github.com/nicolacentrone/feedreader-testing.git`
+2. Move to the main folder by typing `cd feedreader-testing`
+3. Jasmine is already installed in the project directory:
+	`./jasmine/lib`
+3. Run your browser and open the file index.html
