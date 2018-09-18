@@ -4,9 +4,7 @@
   "description": "In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.",
   "main": "index.js",
   "dependencies": {
-    "jasmine": "^3.2.0",
-    "jasmine-jquery": "^2.1.1",
-    "jquery": "^3.3.1"
+    "jasmine": "^3.2.0"
   },
   "devDependencies": {
     "eslint": "^5.6.0",

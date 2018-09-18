@@ -58,9 +58,7 @@ $(function() {
      * must be present in the <body>
      */
     it('is hidden by default', function() {
-      let bdy = document.querySelector('body');
-      let clss = bdy.getAttribute('class');
-      expect(clss).toEqual('menu-hidden');
+      expect($('body').hasClass('menu-hidden')).toBe(true);
     });
 
     /* Checks if the menu toggles on-off if clicked, by simulating a click with
