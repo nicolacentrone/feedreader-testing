@@ -66,13 +66,10 @@ $(function() {
     */
     it('toggles when clicked', function() {
       let trigger = document.querySelector('.menu-icon-link');
-      let bdy = document.querySelector('body');
       trigger.click();
-      let clss = bdy.getAttribute('class');
-      expect(clss).not.toEqual('menu-hidden');
+      expect($('body').hasClass('menu-hidden')).toBe(false);
       trigger.click();
-      clss = bdy.getAttribute('class');
-      expect(clss).toEqual('menu-hidden');
+      expect($('body').hasClass('menu-hidden')).toBe(true);
     });
   });
 
@@ -83,13 +80,11 @@ $(function() {
       loadFeed(0, done); // we need to load the first feed (index 0)
     });
 
-  /* Checks if there is at least one feed
-   * .entry CSS class is present
+  /* Checks if at least one feed .entry CSS class is present
    */
     it('have at least one entry element', function(done) {
-      let article = document.querySelector('article');
-      let clss = article.getAttribute('class');
-      expect(clss).toEqual('entry');
+      let feed = document.querySelector('.feed .entry');
+      expect($(feed).hasClass('entry')).toBe(true);
       done();
     });
   });
