@@ -83,8 +83,8 @@ $(() => {
   /* Checks if at least one feed .entry CSS class is present
    */
     it('have at least one entry element', (done) => {
-      let feed = document.querySelector('.feed .entry');
-      expect($(feed).hasClass('entry')).toBe(true);
+      let feed = document.querySelectorAll('.feed .entry');
+      expect(feed.length).toBeGreaterThan(0);
       done();
     });
   });
