@@ -33,9 +33,9 @@ $(() => {
      * defined and not empty
      */
     it('has an URL defined and not empty', () => {
-      allFeeds.forEach((obj) => {
-        expect(obj.url).toBeDefined();
-        expect(obj.url).not.toBe('');
+      allFeeds.forEach((feeds) => {
+        expect(feeds.url).toBeDefined();
+        expect(feeds.url).not.toBe('');
       });
     });
 
@@ -43,9 +43,9 @@ $(() => {
      * defined and not empty
      */
     it('has a name defined and not empty', () => {
-      allFeeds.forEach((obj) => {
-        expect(obj.name).toBeDefined();
-        expect(obj.name).not.toBe('');
+      allFeeds.forEach((feeds) => {
+        expect(feeds.name).toBeDefined();
+        expect(feeds.name).not.toBe('');
       });
     });
   });
