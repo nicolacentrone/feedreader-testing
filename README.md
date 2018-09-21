@@ -23,10 +23,15 @@ details.
 ### Necessary libraries:
 * node@8.11.3
 * jquery@3.3.1
+* jasmine-jquery@2.1.1
 
 ### Necessary tools
 * npm@6.4.1
-* jasmine@3.2.0
+* jasmine@3.2.0			installed with npm
+
+## Syntax
+* JavaScript Vanilla
+* ES6
 
 ## Installation
 
